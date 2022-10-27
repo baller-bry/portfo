@@ -8,19 +8,12 @@ app = Flask(__name__)
 def route(html_file="index.html"):
     return render_template(html_file)
 
-def write_to_file(data):
-    with open("database.txt", 'a') as database:
-        email = data["email"]
-        subject = data["subject"]
-        message = data["message"]
-        file = database.write(f"{email}, {subject}, {message}\n\n")
-
 def write_to_csv(data):
-    with open("database.csv", 'a', newline='') as database2:
+    with open("database.csv", 'a', newline='') as database:
         email = data["email"]
         subject = data["subject"]
         message = data["message"]
-        csv_writer = csv.writer(database2, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        csv_writer = csv.writer(database, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
 
 @app.route("/submit_form", methods=["POST", "GET"])
