@@ -13,9 +13,9 @@
   <meta name="msapplication-tap-highlight" content="no">
   
   <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
-  <link href="./static/assets/favicon.ico" rel="icon">
+  <link href="./static/assets/favicon-1.ico" rel="icon">
 
-  <title>Title page</title>  
+  <title>001 - Bryson's Portfolio</title>
 
 <link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
 
@@ -48,9 +48,9 @@
             <li><a href="./work001.html" title="" style="color:white;">001</a></li>
             <li><a href="./work002.html" title="" style="color:white;">002</a></li>
             <li><a href="./work003.html" title="" style="color:white;">003</a></li>
-            <li><a href="./work004.html" title="" style="color:white;">004</a></li>
+            <!-- <li><a href="./work004.html" title="" style="color:white;">004</a></li>
             <li><a href="./work005.html" title="" style="color:white;">005</a></li>
-            <li><a href="./work006.html" title="" style="color:white;">006</a></li>
+            <li><a href="./work006.html" title="" style="color:white;">006</a></li> -->
           </ul>
 
 
@@ -65,34 +65,31 @@
         <img src="./static/assets/images/work001-01.jpg" class="img-responsive" alt="">
         <div class="card-container" style="background-color: black; color: white;">
           <div class="text-center">
-            <h1 class="h3" style="color: white;">001 : Fringilla sit amet</h1>
+            <h1 class="h3" style="color: white;">001</h1>
+            <h1 class="h3" style="color: white;">Pushpay Automation</h1>
           </div>
-          <p>Nulla facilisi. Vivamus vestibulum, elit in scelerisque ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in nisi. Quisque libero enim, mattis non augue posuere, venenatis dapibus urna.</p>
-
-          <blockquote>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-            <small class="pull-right">Irina Martin</small>
-          </blockquote>
+          <p>Using the powerful package selenium and its webdriver object, the program begins its automation by launching a Chrome browser to a specified Pushpay sign-in page. From here, the "Admin Portal" link is clicked, the email address and password fields are filled in, and the sign-in button is clicked. These elements are found using their XPATHs.<p><b>Note:</b> The password used in the program is obtained by utilizing the Fernet module from the Cryptography package. See <a href="/work003.html">003</a> for more details regarding the encryption and decryption process.</p></p>
+          <p>Once signed in, the program makes use of Selenium's WebDriverWait function by allowing the page 2 seconds to fully load in and confirm that the required elements exist before attempting to click on them. After the wait, the "Open check scanning portal" button is clicked, a pop-up appears and the "Yes, continue" button is clicked, and a new window is launched. The program switches to the new window and maximizes it, allowing the program to find the required elements on the new window. From here, the "Transactions" link is clicked, the "Remote Deposit Complete" link is clicked, and finally, the "Create New Deposit" button is clicked. The last page is the destination page where a new deposit can be entered and created.</p>
+          <p>See below for the source code (two pages) and the video demonstrating how the program behaves when run using a .command shell script.</p>
         </div>
       </div>
 
-      
-      
-      <div class="col-md-8 col-md-offset-2 section-container-spacer">
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-02.jpg" class="img-responsive" alt="">
-            <p style="color: white;">Menphis skyline</p>
-          </div>
-          <div class="col-xs-12 col-md-6">
-            <img src="./static/assets/images/work001-03.jpg" class="img-responsive" alt="">
-            <p style="color: white;">Menphis skyline</p>
-          </div>
-        </div>
+
+      <div class="row">
+        <span style="color: white;"><b><i>pushpay.py (page 1)</i></b></span>
+        <img src="./static/assets/images/work001-02.png" class="img-thumbnail" alt="">
+        <p></p>
+        <span style="color: white;"><b><i>pushpay.py (page 2)</i></b></span>
+        <img src="./static/assets/images/work001-03.jpg" class="img-thumbnail" alt="">
+        <p></p>
       </div>
 
-      <div class="col-xs-12">
-        <img src="./static/assets/images/work001-04.jpg" class="img-responsive" alt="">
+
+      <div class="col-md-offset-2">
+        <video width="720px" height="480px" controls="controls"/>
+
+        <source src="./static/assets/videos/Pushpay.mp4" type="video/mp4">
+        </video>
       </div>
 
     </div>
@@ -104,7 +101,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12" style="color: white;">
-        <p>© UNTITLED | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a></p>
+        <p>001 - Bryson's Portfolio</p>
       </div>
     </div>
   </div>
