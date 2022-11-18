@@ -68,9 +68,9 @@
             <h1 class="h3" style="color: white;">002</h1>
             <h1 class="h3" style="color: white;">Offering Count</h1>
           </div>
-          <p>The program begins by checking if the Excel file already exists, if so, it will simply open the existing file. If the file has not yet been created, meaning the program has not been run for that day, then it will copy the template file onto the created target file using the copyfile function from the shutil module. After the file has been created, the program checks if the machine's operating system is Windows. If it is, it will open the Windows file, if it's not, it will assume the machine is macOS and will open the file accordingly.</p>
+          <p>The program begins by checking if the MS Excel file already exists. If so, it simply opens the existing file. If the file has not yet been created, meaning the program has not been run for that day, it copies the template file onto the created target file using the <span style="font-family: courier;">copyfile</span> function from the <span style="font-family: courier;">shutil</span> module. After the file has been created, the program opens the Excel spreadsheet (named with the current date) with code that depends on whether the program is run on Windows or on macOS.</p>
           <p><b>Note:</b> Because the program is run on macOS in the video below, the Windows code segments of the source code are commented out because macOS does not recognize the modules/functions.</p>
-          <p>See below for the source code and the video demonstrating how the program behaves when run using a .command shell script.</p>
+          <p>See below for the source code and the video demonstrating how the program behaves when run using a shell script (.command).</p>
         </div>
       </div>
 
