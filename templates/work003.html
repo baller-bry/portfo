@@ -68,9 +68,9 @@
             <h1 class="h3" style="color: white;">003</h1>
             <h1 class="h3" style="color: white;">Encrypter/Decrypter</h1>
           </div>
-          <p>Using the <span style="font-family: courier;">fernet</span> module from the <span style="font-family: courier;">cryptography</span> package, the first program displays a "password encrypter" dialog that asks the user to input a password. After the user inputs a password, a key (ciphertext as type bytes) is generated and written to a <span style="font-family: courier;">key.txt</span> file decoded as a string. A <span style="font-family: courier;">fernet</span> object is created with the key and encrypts the password encoded as bytes. The encrypted password is written to an <span style="font-family: courier;">encryption.txt</span> file decoded as a string.</p>
-          <p>The second program reads in the <span style="font-family: courier;">key.txt</span> file, re-encodes the string key ciphertext into bytes, and generates a <span style="font-family: courier;">fernet</span> object with the key. The <span style="font-family: courier;">encryption.txt</span> file is read in and the string encryption ciphertext also gets re-encoded into bytes. The decrypted password is retrieved by decrypting the encoded encryption which is finally decoded back into a string. The program displays a "password decrypter" dialog and reveals the decrypted password.</p>
-          <p>See below for the source code (two programs) and video demonstrating each program's behavior when run. The programs are run on Windows using shell scripts (.sh) that were created with Git Bash.</p>
+          <p>Using the <span style="font-family: courier;">fernet</span> module from the <span style="font-family: courier;">cryptography</span> package, the first program displays a <i>password encrypter</i> dialog that asks the user to input a password. After the user inputs a password, a key (ciphertext as type bytes) is generated and written to a <span style="font-family: courier;">key.txt</span> file decoded as a string. A <span style="font-family: courier;">Fernet</span> object is created with the key and encrypts the password encoded as bytes. The encrypted password is written to an <span style="font-family: courier;">encryption.txt</span> file decoded as a string.</p>
+          <p>The second program reads in the <span style="font-family: courier;">key.txt</span> file, re-encodes the string key ciphertext into bytes, and generates a <span style="font-family: courier;">Fernet</span> object with the key. The <span style="font-family: courier;">encryption.txt</span> file is read in and the string encryption ciphertext also gets re-encoded into bytes. The decrypted password is retrieved by decrypting the encoded encryption which is finally decoded back into a string. The program displays a <i>password decrypter</i> dialog and reveals the decrypted password.</p>
+          <p>See below for the source code (two programs) and a video demonstrating each program's behavior when run. The programs are run on Windows using shell scripts (.sh) that were created with Git Bash.</p>
         </div>
       </div>
 
@@ -101,7 +101,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12" style="color: white;">
-        <p>003 - Bryson's Portfolio</p>
+        <p>003 - Bryson's Portfolio | Website created with <a href="http://www.mashup-template.com/" title="Create website with free html template" target="_blank">Mashup Template</a></p>
       </div>
     </div>
   </div>
